@@ -1,7 +1,23 @@
 class Scrabble
 
-  def score(word)
-    1
+  attr_reader :word
+
+  def initialize(word)
+    @word = word
+  end
+
+  def score
+    @point_values(letter)
+        letters = letter.chars.map.upcase do |char|
+          point_values(letters)
+
+          total = 0
+          total += 
+           ('')
+         end
+
+
+
   end
 
   def point_values
@@ -14,5 +30,6 @@ class Scrabble
       "U"=>1, "V"=>4, "W"=>4, "X"=>8,
       "Y"=>4, "Z"=>10
     }
+
   end
 end
